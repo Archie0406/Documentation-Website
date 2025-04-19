@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Layout */
+.container {
+  display: flex;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #4caf50; /* Changed to green */
+  padding: 20px;
+  color: white;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 12px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #388e3c; /* Darker green for hover effect */
+}
+
+/* Main Content */
+.content {
+  margin-left: 290px; /* Increased margin for more space */
+  padding: 30px; /* Added padding for breathing room */
+  max-width: 900px;
+}
+
+/* Section Headings */
+h2 {
+  color: #4caf50;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Articles and Lists */
+
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Code Block */
+code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  color: #4caf50;
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    width: auto;
+    padding: 8px;
+  }
+}
